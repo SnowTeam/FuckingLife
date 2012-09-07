@@ -1,0 +1,12 @@
+﻿La génération a démarré 9/7/2012 12:57:52 PM.
+     1>Projet "c:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" sur le nœud 2 (ClCompile cible(s)).
+     1>PrepareForBuild:
+         Création du répertoire "c:\users\philoupe\documents\visual studio 2010\Projects\FuckingLife\Debug\".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>Génération du projet "c:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" terminée (ClCompile cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:03.62
