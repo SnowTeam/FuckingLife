@@ -55,7 +55,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;OgreTerrain.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -69,19 +69,25 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>OgreMain.lib;OIS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;OgreTerrain.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AppDemarrage.cpp" />
+    <ClCompile Include="DotSceneLoader.cpp" />
     <ClCompile Include="InputListener.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MoteurDeJeu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppDemarrage.h" />
+    <ClInclude Include="DotSceneLoader.h" />
     <ClInclude Include="InputListener.h" />
     <ClInclude Include="MoteurDeJeu.h" />
+    <ClInclude Include="rapidxml-1.13\rapidxml.hpp" />
+    <ClInclude Include="rapidxml-1.13\rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml-1.13\rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml-1.13\rapidxml_utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

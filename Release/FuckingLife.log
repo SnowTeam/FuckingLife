@@ -1,5 +1,5 @@
-﻿La génération a démarré 9/30/2012 3:42:08 PM.
-     1>Projet "C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" sur le nœud 2 (build cible(s)).
+﻿La génération a démarré 10/1/2012 6:15:43 PM.
+     1>Projet "C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
          Création de "Release\FuckingLife.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
        ClCompile:
@@ -7,21 +7,23 @@
          AppDemarrage.cpp
      1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\AppDemarrage.h(2): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
      1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\AppDemarrage.h(3): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+     1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\AppDemarrage.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Release\FuckingLife.exe" /NOLOGO OgreMain.lib OIS.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\FuckingLife.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Release\FuckingLife.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Release\FuckingLife.lib" /MACHINE:X86 Release\AppDemarrage.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\Release\FuckingLife.exe" /NOLOGO OgreMain.lib OIS.lib OgreTerrain.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\FuckingLife.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\Release\FuckingLife.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\Release\FuckingLife.lib" /MACHINE:X86 Release\AppDemarrage.obj
+         Release\DotSceneLoader.obj
          Release\InputListener.obj
          Release\main.obj
          Release\MoteurDeJeu.obj
          Génération de code en cours
          Fin de la génération du code
-         FuckingLife.vcxproj -> C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Release\FuckingLife.exe
+         FuckingLife.vcxproj -> C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\Release\FuckingLife.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Release\FuckingLife.exe;#1" /manifest Release\FuckingLife.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\Release\FuckingLife.exe;#1" /manifest Release\FuckingLife.exe.intermediate.manifest
        FinalizeBuildStatus:
          Suppression du fichier "Release\FuckingLife.unsuccessfulbuild".
          Mise à jour de l'horodatage "Release\FuckingLife.lastbuildstate".
-     1>Génération du projet "C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" terminée (build cible(s)).
+     1>Génération du projet "C:\Users\Philoupe\documents\visual studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" terminée (build cible(s)).
 
 La génération a réussi.
 
-Temps écoulé 00:00:26.30
+Temps écoulé 00:00:30.28

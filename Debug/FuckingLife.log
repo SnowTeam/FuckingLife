@@ -1,20 +1,26 @@
-﻿La génération a démarré 9/30/2012 2:50:54 PM.
+﻿La génération a démarré 9/30/2012 5:41:50 PM.
      1>Projet "C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\FuckingLife\FuckingLife.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
-         Mise à jour de l'horodatage "Debug\FuckingLife.unsuccessfulbuild".
+         Création de "Debug\FuckingLife.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AppDemarrage.cpp MoteurDeJeu.cpp main.cpp
-         MoteurDeJeu.cpp
-     1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\moteurdejeu.cpp(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AppDemarrage.cpp InputListener.cpp main.cpp
+         InputListener.cpp
+     1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\inputlistener.cpp(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
          AppDemarrage.cpp
      1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\appdemarrage.h(2): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+     1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\appdemarrage.h(3): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
          Génération de code en cours...
-         Ignoré... (aucune modification pertinente détectée)
+         Compilation en cours...
          main.cpp
+     1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\appdemarrage.h(2): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+     1>c:\users\philoupe\documents\visual studio 2010\projects\fuckinglife\fuckinglife\appdemarrage.h(3): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+         Génération de code en cours...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Debug\FuckingLife.exe" /NOLOGO OgreMain_d.lib OIS_d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\FuckingLife.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Debug\FuckingLife.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Debug\FuckingLife.lib" /MACHINE:X86 Debug\AppDemarrage.obj
+         Debug\InputListener.obj
          Debug\main.obj
          Debug\MoteurDeJeu.obj
+         LINK : C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Debug\FuckingLife.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
          FuckingLife.vcxproj -> C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Debug\FuckingLife.exe
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Philoupe\Documents\Visual Studio 2010\Projects\FuckingLife\Debug\FuckingLife.exe;#1" /manifest Debug\FuckingLife.exe.intermediate.manifest
@@ -25,4 +31,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:18.89
+Temps écoulé 00:00:43.29

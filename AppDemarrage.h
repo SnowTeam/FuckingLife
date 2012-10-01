@@ -1,6 +1,7 @@
 #include <Ogre.h>
 #include "MoteurDeJeu.h";
 #include "InputListener.h";
+#include "DotSceneLoader.h";
 
 class AppDemarrage
 {

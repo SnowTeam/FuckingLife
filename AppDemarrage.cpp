@@ -58,13 +58,22 @@ bool AppDemarrage::start()
 
 bool AppDemarrage::initMap()
 {
+	DotSceneLoader loader;
+	loader.parseDotScene("map.scene","General", mSceneMgr);
+	Ogre::Vector3 lightdir(-0.0f, -0.5f, -1.0f);
+	Ogre::Light* mLight;
+	mLight = mSceneMgr->createLight("terrainLight");
+	mLight->setType(Ogre::Light::LT_DIRECTIONAL);
+	mLight->setDirection(lightdir);
+	mLight->setDiffuseColour(Ogre::ColourValue(1.0f, 1.0f, 1.0f));
+	mLight->setSpecularColour(Ogre::ColourValue(1.0f, 1.0f, 1.0f));
 	return true;
 }
 
 bool AppDemarrage::initJoueur()
 {
 	mCamera = mSceneMgr->createCamera("PlayerCam");
-	mCamera->setPosition(Ogre::Vector3(0,0,100));
+	mCamera->setPosition(Ogre::Vector3(0,100,100));
 	mCamera->lookAt(Ogre::Vector3(0,0,0));
 	mCamera->setNearClipDistance(5);
 
@@ -82,5 +91,4 @@ void AppDemarrage::createFrameListener()
 {
     mInputListener = new InputListener(mWindow, mCamera);
     mRoot->addFrameListener(mInputListener);
-	Ogre::LogManager::getSingletonPtr()->logMessage("*** Initializing OIS **2");
 }
