@@ -40,15 +40,12 @@ bool AppDemarrage::start()
 	mSceneMgr->setAmbientLight(Ogre::ColourValue(1.0f, 1.0f, 1.0f));
 	bool booleen;
 	booleen = initMap();
-	Ogre::LogManager::getSingletonPtr()->logMessage("*** Initializing OIS **0*");
 	if(booleen)
 	{
-		Ogre::LogManager::getSingletonPtr()->logMessage("*** Initializing OIS **00*");
 		booleen = initJoueur();
 	}
 	if(booleen)
 	{
-		Ogre::LogManager::getSingletonPtr()->logMessage("*** Initializing OIS ***");
 		createFrameListener();
 		MoteurDeJeu* moteur = new MoteurDeJeu(mWindow,mRoot);
 		booleen = moteur->boucle();
@@ -60,20 +57,20 @@ bool AppDemarrage::initMap()
 {
 	DotSceneLoader loader;
 	loader.parseDotScene("map.scene","General", mSceneMgr);
-	Ogre::Vector3 lightdir(-0.0f, -0.5f, -1.0f);
+	Ogre::Vector3 lightdir(0.0f, -0.5f, 1.0f);
 	Ogre::Light* mLight;
 	mLight = mSceneMgr->createLight("terrainLight");
 	mLight->setType(Ogre::Light::LT_DIRECTIONAL);
 	mLight->setDirection(lightdir);
 	mLight->setDiffuseColour(Ogre::ColourValue(1.0f, 1.0f, 1.0f));
-	mLight->setSpecularColour(Ogre::ColourValue(1.0f, 1.0f, 1.0f));
+	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 	return true;
 }
 
 bool AppDemarrage::initJoueur()
 {
 	mCamera = mSceneMgr->createCamera("PlayerCam");
-	mCamera->setPosition(Ogre::Vector3(0,100,100));
+	mCamera->setPosition(Ogre::Vector3(0,100,-100));
 	mCamera->lookAt(Ogre::Vector3(0,0,0));
 	mCamera->setNearClipDistance(5);
 
@@ -81,9 +78,6 @@ bool AppDemarrage::initJoueur()
 	vp->setBackgroundColour(Ogre::ColourValue(0,0,0));
 	mCamera->setAspectRatio(Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
 
-	Ogre::Entity *ent = mSceneMgr->createEntity("pinguin", "penguin.mesh");
-	Ogre::SceneNode *node = mSceneMgr->getRootSceneNode()->createChildSceneNode();
-	node->attachObject(ent);
 	return true;
 }
 
